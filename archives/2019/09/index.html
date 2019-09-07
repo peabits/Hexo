@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Archives: 2019/9 | peabits&#39; Web Log</title>
+  <title>Archives: 2019/9 | PEABITS&#39; WEB LOG</title>
   
   <meta name="keywords" content="Java,Python,C++,C,数据结构,算法,Spring,Spring-MVC,Mybatis,Spring-Boot,大数据,分布式,云计算,人工智能,深度学习">
   
   
-  <meta name="description" content="peabits' Web Log">
+  <meta name="description" content="peabits' web log">
   
 
   
@@ -134,7 +134,7 @@
 		<div class="nav-main container container--flex">
       <a class="logo flat-box" href='/' >
         
-          peabits' Web Log
+          <img class='logo' src='https://img.vim-cn.com/d1/4911906ca05da0805cb6dc3e5b44f3d4a4e8a3.png'/>
         
       </a>
 			<div class='menu navgation'>
@@ -303,6 +303,8 @@
         
           
         
+          
+        
       
     
     
@@ -387,6 +389,95 @@
         </div>
       
     </div>
+    
+  </section>
+</article>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2019/09/06/example/更自由的布局/">
+      更自由的布局
+    </a>
+  </h2>
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://peabits.github.io" rel="nofollow">
+        
+          <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png">
+        
+        <p>W.J. Qu</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-09-07T21:01:36+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>更新于 2019年9月7日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p>现在（<code>1.2.4 以及更高版本</code>）主题配置文件中旧的侧边栏配置依旧不变，在此基础上新增了<code>layout</code>字段专门用于控制页面显示什么。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">layout:</span></span><br><span class="line">  <span class="comment"># 文章列表（主页、自定义的列表）布局</span></span><br><span class="line"><span class="attr">  posts:</span></span><br><span class="line">    <span class="comment"># 列表中每一篇文章的meta信息</span></span><br><span class="line"><span class="attr">    meta:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">top]</span></span><br><span class="line">    <span class="comment"># 列表类页面的侧边栏</span></span><br><span class="line"><span class="attr">    sidebar:</span> <span class="string">[author,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list]</span></span><br><span class="line">  <span class="comment"># 文章页面布局</span></span><br><span class="line"><span class="attr">  article:</span></span><br><span class="line">    <span class="comment"># 文章页面主体元素，你也可以在页面的Front-matter中设置</span></span><br><span class="line"><span class="attr">    body:</span> <span class="string">[article,</span> <span class="string">comments]</span></span><br><span class="line">    <span class="comment"># 默认的meta信息，文章中没有配置则按照这里的配置来显示，设置为false则不显示</span></span><br><span class="line">    <span class="comment"># 其中，title只在header中有效，music和thumbnail无需在这里设置，文章中有则显示</span></span><br><span class="line">    <span class="comment"># 如果tags放置在meta.header中，那么在post列表中不显示（因为卡片下方已经有了）</span></span><br><span class="line"><span class="attr">    header:</span> <span class="string">[title,</span> <span class="string">author,</span> <span class="string">date,</span> <span class="string">categories,</span> <span class="string">counter,</span> <span class="string">top]</span></span><br><span class="line"><span class="attr">    footer:</span> <span class="string">[updated,</span> <span class="string">tags,</span> <span class="string">share]</span></span><br><span class="line">    <span class="comment"># 文章页面的侧边栏</span></span><br><span class="line"><span class="attr">    sidebar:</span> <span class="string">[author,</span> <span class="string">toc,</span> <span class="string">grid,</span> <span class="string">category,</span> <span class="string">tagcloud,</span> <span class="string">list,</span> <span class="string">related_posts]</span></span><br><span class="line">  <span class="comment"># 其他的页面布局暂时等于文章列表</span></span><br></pre></td></tr></table></figure>
+      
+        <div class="readmore">
+          <a href="/2019/09/06/example/更自由的布局/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/tips/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> tips</a>
+        
+      </div>
     
   </section>
 </article>
@@ -714,6 +805,37 @@
           
             
               
+  <section class='widget category'>
+    
+<header class='pure'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/categories/"
+    title="blog/categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/Dev/" href="/categories/Dev/"><div class='name'>Dev</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Dev/Hexo/" href="/categories/Dev/Hexo/"><div class='name'>Hexo</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/Dev/Shell-Scripts/" href="/categories/Dev/Shell-Scripts/"><div class='name'>Shell Scripts</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/教程/" href="/categories/教程/"><div class='name'>教程</div><div class='badge'>(9)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
 
             
           
@@ -745,6 +867,27 @@
           
             
               
+  <section class='widget tagcloud'>
+    
+<header class='pure'>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/blog/tags/"
+    title="blog/tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content pure'>
+      <a href="/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/tags/shell/" style="font-size: 24px; color: #555">shell</a> <a href="/tags/ss/" style="font-size: 14px; color: #999">ss</a> <a href="/tags/tips/" style="font-size: 14px; color: #999">tips</a>
+    </div>
+  </section>
+
 
             
           
